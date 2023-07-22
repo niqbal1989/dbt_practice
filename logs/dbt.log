@@ -1,0 +1,28 @@
+[0m23:49:02.395916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083df7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10840f510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10840fc90>]}
+
+
+============================== 23:49:02.399187 | cb04118c-0d90-4df0-b523-40468b1986e8 ==============================
+[0m23:49:02.399187 [info ] [MainThread]: Running with dbt=1.5.3
+[0m23:49:02.399482 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/nadiaiqbal/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:49:02.399791 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/nadiaiqbal/Documents/dbt/perry_takehome/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:49:02.400090 [debug] [MainThread]: Command `dbt run` failed at 23:49:02.400036 after 0.02 seconds
+[0m23:49:02.400253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10841c710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10841c0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10840f4d0>]}
+[0m23:49:02.400412 [debug] [MainThread]: Flushing usage events
+[0m23:56:47.646296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c003d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c14590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c14bd0>]}
+
+
+============================== 23:56:47.649841 | 88b8ab17-06df-4679-896e-ab305a24949e ==============================
+[0m23:56:47.649841 [info ] [MainThread]: Running with dbt=1.5.3
+[0m23:56:47.650160 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/nadiaiqbal/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:56:47.650485 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/nadiaiqbal/Documents/dbt/perry_takehome/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:56:47.650792 [debug] [MainThread]: Command `dbt run` failed at 23:56:47.650738 after 0.03 seconds
+[0m23:56:47.650951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c14110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c14210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057a5110>]}
+[0m23:56:47.651109 [debug] [MainThread]: Flushing usage events

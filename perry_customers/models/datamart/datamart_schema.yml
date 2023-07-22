@@ -1,0 +1,75 @@
+version: 2
+
+models:
+  - name: metrics_table
+    description: "This table contains the computed metrics to analyze customers and their transactions."
+    columns:
+      - name: customer_id
+        description: "The identifier for each customer."
+        tests:
+          - not_null
+      - name: transaction_id
+        description: "The identifier for a particular transaction."
+        tests:
+          - not_null
+      - name: payment_method
+        description: "Method of payment for the transaction"
+        tests:
+          - not_null          
+      - name: customer_sign_up_date
+        description: "The date when the customer signed up"
+        tests:
+          - not_null
+      - name: customer_state
+        description: "The state where the customer resides"
+        tests:
+          - not_null
+      - name: transaction_date
+        description: "Date of the transaction"
+        tests:
+          - not_null
+      - name: total_price_dollars
+        description: "The total price for the quantity of products within each row"
+        tests:
+          - not_null
+      - name: product_id
+        description: "The identifier for each product."
+        tests:
+          - not_null
+      - name: product_category
+        description: "Category of the product."
+        tests:
+          - not_null
+      - name: lifetime_price_per_customer
+        description: "The total lifetime spend per customer."
+        tests: 
+          - not_null
+      - name: price_of_transaction
+        description: "The total amount spent per transaction."
+        tests: 
+          - not_null
+      - name: transactions_per_customer
+        description: "The lifetime total number of transactions per customer."
+        tests: 
+          - not_null
+      - name: count_per_product_id
+        description: "The count of total number of product purchased for a particular product id."
+        tests: 
+          - not_null
+      - name: count_per_product_category
+        description: "The count of total number of product purchased for a particular product category."
+        tests: 
+          - not_null
+      - name: unique_customers_per_product_id
+        description: "The unique count of customers who purchased a particular product id."
+        tests: 
+          - not_null
+      - name: unique_customers_per_product_category
+        description: "The unique count of customers who purchased a particular product category."
+        tests: 
+          - not_null
+      - name: is_high_value
+        description: "A field that indicates whether the customer has spent more than $1000 in their lifecycle"
+        tests:
+          - accepted_values:
+              values: ['t', 'f']

@@ -1,0 +1,13 @@
+version: 2
+sources:
+  - name: perryhealth
+    schema: raw
+    tables:
+      - name: customers
+        identifier: raw_customers
+      - name: products
+        identifier: raw_products
+      - name: transactions
+        identifier: raw_transactions
+      - name: transaction_details
+        identifier: raw_transaction_details

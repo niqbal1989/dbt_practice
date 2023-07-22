@@ -1,0 +1,82 @@
+# models/schema.yml
+version: 2
+
+models:
+  - name: customers
+    description: "This table contains customer information."
+    meta:
+      schema: raw
+    columns:
+      - name: id
+        description: "Unique identifier for each customer"
+        tests:
+          - unique
+          - not_null
+      - name: sign_up_date
+        description: "The date when the customer signed up"
+        tests:
+          - not_null
+      - name: state
+        description: "The state where the customer resides"
+        tests:
+          - not_null
+
+  - name: products
+    description: "This table contains product information."
+    meta:
+      schema: raw
+    columns:
+      - name: product_id
+        description: "Unique identifier for each product"
+        tests:
+          - unique
+          - not_null
+      - name: product_category
+        description: "Category of the product"
+        tests:
+          - not_null
+      - name: unit_price_cents
+        description: "Price per unit of the product in cents"
+        tests:
+          - not_null
+
+  - name: transactions
+    description: "This table contains transaction information."
+    meta:
+      schema: raw
+    columns:
+      - name: transaction_id
+        description: "Unique identifier for each transaction"
+        tests:
+          - not_null
+      - name: product_id
+        description: "Unique identifier for the product in the transaction"
+        tests:
+          - not_null
+      - name: quantity
+        description: "Number of units of the product sold in the transaction"
+        tests:
+          - not_null
+
+  - name: transaction_details
+    description: "This table contains details of each transaction."
+    meta:
+      schema: raw
+    columns:
+      - name: transaction_id
+        description: "Unique identifier for the transaction"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Unique identifier for the customer who made the transaction"
+        tests:
+          - not_null
+      - name: transaction_date
+        description: "Date of the transaction"
+        tests:
+          - not_null
+      - name: payment_method
+        description: "Method of payment for the transaction"
+        tests:
+          - not_null
